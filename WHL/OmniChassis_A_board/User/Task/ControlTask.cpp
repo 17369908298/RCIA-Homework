@@ -1,4 +1,4 @@
-#include "ControlTask.hpp"
+﻿#include "ControlTask.hpp"
 
 
 extern bool alphabet[28];
@@ -83,6 +83,7 @@ void fsm_init()
  * @param phi   角度偏差补偿值（单位：弧度，用于微调或者机械安装误差补偿）
  * @param out_vx [输出指针] 计算旋转矩阵后，底盘坐标系下的 X 方向速度（前后）
  * @param out_vy [输出指针] 计算旋转矩阵后，底盘坐标系下的 Y 方向速度（左右）
+ 
  * @param psi   额外的相位角补偿（单位：弧度，用于特殊机动如小陀螺等）
  */
 void CalculateTranslation_xy(float theta, float vx, float vy, float phi, float *out_vx, float *out_vy, float psi)
